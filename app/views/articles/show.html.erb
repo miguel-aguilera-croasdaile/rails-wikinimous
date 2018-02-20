@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="article">
+      <div class="title">
+        <h1><%= @article.title %></h1>
+      </div>
+      <hr>
+      <div class="content">
+        <h2><%= @article.content %></h2>
+      </div>
+
+      <div class="buttons">
+        <%= link_to "Edit article", edit_article_path(@article) %>
+        <%= link_to 'Delete',
+        article_path(@article),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+        <%= link_to "Go back", articles_path  %>
+      </div>
+    </div>
+  </div>
+</div>

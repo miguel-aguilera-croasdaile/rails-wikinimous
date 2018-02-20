@@ -1,0 +1,21 @@
+<div class="wrapper">
+
+  <h1>Editing Article</h1>
+
+  <div class="wrapper">
+    <div class="container">
+
+      <%= form_for(@article) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= link_to "Go back", articles_path  %>
+
+</div>

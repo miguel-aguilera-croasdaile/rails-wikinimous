@@ -14,56 +14,115 @@
  *= require_self
  */
 
+ body{
+  background: #fafafa;
+ }
+
  .wrapper{
   text-align: center;
- }
-
- .container-form{
- }
-
- .container{
   background-color: #fafafa;
+  height: 100vh;
+  display: flex;
+}
+
+.container{
   text-align: center;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 20px;
-  margin: auto;
-  width: 500px;
- }
+}
 
- .title{
+.container a{
+  color: gray;
+}
+
+.container a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.title{
   text-align: center;
- }
+}
 
- .content{
-  text-align: left;
+.cards{
+  display: flex;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
   padding: 10px;
- }
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 3px #f2f2f2);
+}
 
- h2{
-  padding: 10px;
-  margin: 1px;
- }
+.card a{
+  text-decoration: none;
+  color: gray;
+}
 
- .buttons{
+.large-card{
+  vertical-align: center;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 3px #f2f2f2);
+}
+
+.buttons{
   width: 70%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin: auto;
- }
+}
 
- a{
-  text-decoration: none;
+.buttons a{
   color: gray;
-  padding: 10px;
- }
+}
 
- #article_content{
-  width: 200px;
- }
+.buttons a:hover{
+  color: black;
+  text-decoration: none;
+}
 
- .edit_article{
-  padding: 10px;
- }
+.form{
+  justify-content: right;
+}
+
+.header h1{
+  margin-top: 3px;
+}
+
+#title-row{
+  text-align: left;
+}
+
+#content-row{
+  text-align: left;
+}
+
+.box{
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+#article_title{
+  width: 350px;
+}
+
+#article_content{
+  width: 350px;
+}
+
+
